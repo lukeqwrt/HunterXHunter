@@ -1,0 +1,103 @@
+.watch{
+    background-image: url('/img/watch.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 50px;
+}
+.watch .watch-container{
+    max-width: 1150px;
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    display: grid;
+    align-items: center;
+    /* background: green; */
+    grid-template-columns: 1fr auto;
+}
+
+.watch .watch-container .watch-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+margin-top: 100px;
+    width: 100%;
+    /* min-width: 0px; */
+    /* grid-auto-rows: 50px; */
+    /* background-color: pink; */
+}
+.watch .watch-container .watch-content h3{
+    font-size: 60px;
+    color: #3C2929;
+    text-shadow: 10px 10px 10px rgb(0 0 0 / 25%);
+    font-family: 'Passion One', cursive;
+}
+.watch .watch-container .watch-content p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.watch .watch-container .watch-content p:nth-child(2){
+    margin-top: 10px;
+    
+}
+.watch .watch-container .watch-content p:nth-child(3){
+    font-family: 'Passion One', cursive;
+    color: #3C2929;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.watch .watch-container .watch-content p:nth-child(4),
+.watch .watch-container .watch-content p:nth-child(5),
+.watch .watch-container .watch-content p:nth-child(6),
+.watch .watch-container .watch-content p:nth-child(7){
+
+    margin-bottom: 20px;
+    width: 100%;
+}
+.watch .watch-container .watch-content a{
+    color: blue;
+}
+@media screen and (max-width: 522px){
+    .watch .watch-container .watch-content{
+    margin-top: 0px;
+    }
+
+    .watch .watch-container .watch-content p:nth-child(2){
+        margin-top: 30px;
+        
+    }
+    .watch .watch-container .watch-content p:nth-child(3){
+
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
+    .watch{
+        height: unset;
+        padding: 80px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .watch .watch-container .watch-content a{
+        font-size: 13px;
+    }
+.watch .watch-container .watch-content p:nth-child(4),
+.watch .watch-container .watch-content p:nth-child(5),
+.watch .watch-container .watch-content p:nth-child(6),
+.watch .watch-container .watch-content p:nth-child(7){
+
+    margin-bottom: 20px;
+    width: 100%;
+}
+}
+
+
+.background2{
+    height: 60vh;
+    background-image: url('../img/vs.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

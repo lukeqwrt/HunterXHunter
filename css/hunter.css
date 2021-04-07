@@ -1,0 +1,62 @@
+.hunters{
+    /* height: 130vh; */
+    background-image: url('../img/hunters2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 50px;
+
+}
+.hunters h3{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 10px 10px 10px rgb(0 0 0 / 25%);
+    font-family: 'Passion One', cursive;
+}
+.hunters span{
+    color: rgb(216, 98, 98);
+}
+.hunters .hunter-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .card{ */
+    /* position: relative; */
+    /* width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: red;
+} */
+
+.hunters .hunter-container .card .hunter-image{
+    box-sizing: border-box;
+    /* width: 200px; */
+    /* widows: 400px; */
+    width: 100%;
+}
+.hunters .hunter-container .card .hunter-image img{
+    height: 500px;
+    width: 400px;
+}
+@media screen and (max-width: 440px){
+    .hunters{
+        padding: 50px 10px;
+    
+    }
+}
+
+
+/* background hunter section */
+.hunter-background{
+    height: 90vh;
+    background-image: url('../img/mybackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
