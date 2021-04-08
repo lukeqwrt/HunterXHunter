@@ -32,7 +32,7 @@
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     max-width: 800px;
-    text-align: left;
+    text-align: center;
     margin: 20px 0;
 }
 .games .games-container .games-content .game-wrapper{
@@ -92,8 +92,12 @@
         height: auto;
         width: 110px;
     }
-}
+    .games .games-container .games-content p{
 
+        text-align: left;
+
+    }
+}
 .footer{
     height: 50vh;
     background-image: url('../img/footer.jpg');
