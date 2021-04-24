@@ -12,4 +12,19 @@ mobileMenu.addEventListener('click', () => {
     }
 })
 
+window.addEventListener('resize', () => {
+    if(window.innerWidth > 1059){
+        if(mobileMenu.classList.contains('active')){
+            mobileMenu.classList.remove('active')
+            navlist.classList.remove('active')
+        }
+      
+    }
+})
 
+
+
+window.addEventListener('load', () => {
+    const loader =  document.querySelector('.loader');
+    loader.classList.add("hidden")
+})

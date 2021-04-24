@@ -5,6 +5,127 @@
 @import './manga.css';
 @import './games.css';
 
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    height: auto;
+    width: 300px;
+}
+.loader .snippet .stage h3{
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(23, 19, 71);
+    font-family: 'Poppins', sans-serif;
+}
+.loader .snippet .stage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px){
+  .loader img{
+    height: auto;
+    width: 200px;
+}
+.loader .snippet .stage h3{
+  font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 425px){
+  .loader img{
+    height: auto;
+    width: 150px;
+  }
+  .loader .snippet .stage h3{
+    font-size: 15px;
+  }
+}
+.dot-bricks {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: 8px;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(23, 19, 71);
+    color: rgb(23, 19, 71);
+    box-shadow: 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71);
+    animation: dotBricks 2s infinite ease;
+  }
+  
+  @keyframes dotBricks {
+    0% {
+      box-shadow: 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71);
+    }
+    8.333% {
+      box-shadow: 10007px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71);
+    }
+    16.667% {
+      box-shadow: 10007px -16px 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71);
+    }
+    25% {
+      box-shadow: 10007px -16px 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71);
+    }
+    33.333% {
+      box-shadow: 10007px 0 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71);
+    }
+    41.667% {
+      box-shadow: 10007px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71);
+    }
+    50% {
+      box-shadow: 10007px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71);
+    }
+    58.333% {
+      box-shadow: 9991px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71);
+    }
+    66.666% {
+      box-shadow: 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71), 9991px -16px 0 0 rgb(23, 19, 71);
+    }
+    75% {
+      box-shadow: 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71);
+    }
+    83.333% {
+      box-shadow: 9991px -16px 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71);
+    }
+    91.667% {
+      box-shadow: 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71), 10007px -16px 0 0 rgb(23, 19, 71);
+    }
+    100% {
+      box-shadow: 9991px -16px 0 0 rgb(23, 19, 71), 9991px 0 0 0 rgb(23, 19, 71), 10007px 0 0 0 rgb(23, 19, 71);
+    }
+  }
+  
+.loader.hidden{
+    animation: fadeout 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+/* html */
 html{
     scroll-behavior: smooth;
 }
@@ -82,12 +203,12 @@ nav .nav-content .navlist li a:hover{
         display: grid;
         align-items: center;
         justify-items: center;
-        transition: all 0.4s ease;
+        /* transition: all 0.4s ease; */
     }
     nav .nav-content .navlist li{
         visibility: hidden;
         opacity: 0;
-        transition: opacity 0.4s ease;
+        transition: height 0.4s ease;
     }
     nav .nav-content .navlist.active{
       
