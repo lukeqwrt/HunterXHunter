@@ -59,6 +59,12 @@ margin-top: 100px;
 .watch .watch-container .watch-content a{
     color: blue;
 }
+@media screen and (max-width: 778px){
+    .watch .watch-container .watch-content a{
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 522px){
     .watch .watch-container .watch-content{
     margin-top: 0px;
